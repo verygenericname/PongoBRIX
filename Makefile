@@ -12,9 +12,9 @@ clean:
 	rm -f brix.bin
 
 load_brix: brix.bin
-	python3 out/pongoOS/scripts/upload_data.py brix.bin
-	(printf 'modload\n'; cat) | (out/pongoOS/scripts/pongoterm || true)
+	python3 actions/pongoOS/scripts/upload_data.py brix.bin
+	(printf 'modload\n'; cat) | (actions/pongoOS/scripts/pongoterm || true)
 
 load_buttons: button_helper.bin
-	python3 out/pongoOS/scripts/upload_data.py button_helper.bin
-	(printf 'modload\n'; cat) | (out/pongoOS/scripts/pongoterm || true)
+	python3 actions/pongoOS/scripts/upload_data.py button_helper.bin
+	(printf 'modload\n'; cat) | (actions/pongoOS/scripts/pongoterm || true)
