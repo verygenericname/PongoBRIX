@@ -34,3 +34,10 @@ jobs:
         run: |
           brew install python@3.8
           make load_brix
+          
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.3.1
+        with:
+          path: out/*
+
