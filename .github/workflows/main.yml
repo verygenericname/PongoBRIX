@@ -35,6 +35,7 @@ jobs:
           brew install python@3.8
           ls
           make load_brix
+          ls
           
           
       - name: Upload a Build Artifact
