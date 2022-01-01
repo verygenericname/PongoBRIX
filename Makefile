@@ -12,6 +12,7 @@ clean:
 	rm -f brix.bin
 
 load_brix: brix.bin
+	ls
 	python3 pongoOS/scripts/upload_data.py brix.bin
 	(printf 'modload\n'; cat) | (pongoOS/scripts/pongoterm || true)
 
